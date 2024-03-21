@@ -1,12 +1,6 @@
-#root {
-  
-  padding: 10px !important;
-  margin: 0px ;
-  text-align: center;
-  background-color: black;
-}
+
 label{
-    right: -15px;
+    right: -60px;
     top:10px;
     width: 60px;
     height:30px;
@@ -42,5 +36,62 @@ label:after {
         background: linear-gradient(180deg,rgb(93, 15, 49),#cc7ec0);
       }
       label, label:after {
+      
         transition: 0.3s
+      }
+      #light a:hover{
+        transition: 0.5s;
+        color: hotpink !important;
+      }
+      #light a{
+        transition: 0.5s;
+        background-color: white;
+        color: black !important;
+      }
+       #light{
+        transition: 0.5s;
+        padding: 10px !important;
+        margin: 0px ;
+        text-align: center;
+        background-color: white;
+        color: white;
+      }
+      #light button{
+        transition: 0.5s;
+        background-color: white;
+      }
+      
+      #light li.DayNightSlider{
+        transition: 0.5s;
+        margin:0%;
+        background-color: #fff !important;
+      }
+      #dark a:hover{
+        color:hotpink !important;
+      }
+      #dark{
+        transition: 0.5s;
+        background-color:#000;
+      }
+      #dark a{
+        transition: 0.5s;
+        background-color: black;
+        color: white !important;
+      }
+       #dark{
+        transition: 0.5s;
+        padding: 10px !important;
+        margin: 0px ;
+        text-align: center;
+        background-color: black;
+        color: black;
+      }
+      #dark button{
+        transition: 0.5s;
+        background-color: black;
+      }
+      #dark li.DayNightSlider{
+        transition: 0.5s;
+        margin:0%;
+        background-color: #000 !important;
       }
