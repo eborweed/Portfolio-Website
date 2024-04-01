@@ -12,10 +12,10 @@ function TopNavBar() {
     setTheme(theme === "dark" ? "light" : "dark");
     if (theme == "dark") {
       document.body.style =
-        "background: white !important; transition: background 0.5s;";
+        "background: #eeeeee !important; transition: background 0.5s;";
     } else {
       document.body.style =
-        "background:black !important;transition: background 0.5s";
+        "background: #222222 !important;transition: background 0.5s";
     }
   }
   return (

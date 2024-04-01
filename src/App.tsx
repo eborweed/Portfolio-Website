@@ -1,14 +1,16 @@
 import React from "react";
-//import "./App.css";
-import theme from "./components/TopNavBar";
-import "./components/DarkmodeSlider.css";
+import Typed from "react-typed";
+import "./App.css";
 import TopNavBar from "./components/TopNavBar";
+import AnimationTest from "./components/AnimationTest";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <TopNavBar />
-    </div>
+      <AnimationTest />
+    </>
   );
 }
+
 export default App;

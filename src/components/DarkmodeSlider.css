@@ -40,7 +40,7 @@ label:after {
         transition: 0.3s
       }
       #light a:hover{
-        transition: 0.5s;
+        
         color: hotpink !important;
       }
       #light a{

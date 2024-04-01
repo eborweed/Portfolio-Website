@@ -1,0 +1,40 @@
+* { margin: 0; padding: 0; }
+div.circle {
+    background-color: green; 
+    border-radius: 100px;
+    height: 100px;
+    width: 100px;
+    translate: 200px 200px ;
+   }
+  
+    .container {
+      padding: 0  !important;;
+      margin: 0 !important;
+      font-family: arial;
+      font-size: 24px;
+      display: flex;
+      justify-content: center!important;
+      
+      min-width: 100%!important;
+      height:92% ;
+      /* Center child horizontally*/
+      justify-content: center;
+    }
+    
+    
+  
+   div.circle2 {
+    opacity: 30%;
+    width: 20rem;
+    height: 10rem;
+    background-color: #48abe0;
+    border-radius: 50rem 50rem 0 0;
+   position:absolute;
+    bottom:0px;
+    
+    
+    
+  }
+   motion.p{
+    color: aliceblue  !important;
+   }
