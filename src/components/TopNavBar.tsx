@@ -22,20 +22,20 @@ function TopNavBar() {
     <div className="topnav" id={theme}>
       <ul>
         <li className="home">
-          <a href="#home">
-            <img src={"../assets/IW_" + theme + "mode.png"} alt="Hello World" />
+          <a href="/Home">
+            <img src={"./assets/IW_" + theme + "mode.png"} alt="Hello World" />
           </a>
         </li>
 
         <li className="about">
           <button>
-            <a href="#about">About </a>
+            <a href={"/About"}>About </a>
           </button>
         </li>
 
         <li className="projects">
           <button>
-            <a href="#projects">Projects</a>
+            <a href="/projects">Projects</a>
           </button>
         </li>
         <li className="contact">

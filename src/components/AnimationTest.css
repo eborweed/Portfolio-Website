@@ -1,10 +1,12 @@
 * { margin: 0; padding: 0; }
-div.circle {
-    background-color: green; 
+div.circle { 
+  opacity:30%;
+    background-color: yellow; 
     border-radius: 100px;
     height: 100px;
     width: 100px;
-    translate: 200px 200px ;
+    translate: 0% 60% ;
+   
    }
   
     .container {
@@ -17,7 +19,7 @@ div.circle {
       
       min-width: 100%!important;
       height:92% ;
-      /* Center child horizontally*/
+      /* Center child horizontally*/  
       justify-content: center;
     }
     
@@ -25,10 +27,11 @@ div.circle {
   
    div.circle2 {
     opacity: 30%;
-    width: 20rem;
-    height: 10rem;
-    background-color: #48abe0;
+    width: 50rem;
+    height: 25rem;
+    background-color: #d8e048;
     border-radius: 50rem 50rem 0 0;
+    box-shadow: 0 0 1rem 1rem rgba(246, 252, 94, 0.5);
    position:absolute;
     bottom:0px;
     

@@ -1,22 +1,23 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useAnimate } from "framer-motion";
 import "./AnimationTest.css";
 const AnimationTest = () => {
   return (
     <>
       <div className="container">
         <motion.div className="circle2"></motion.div>
+
+        <motion.div
+          className="circle"
+          initial={{ y: 0, opacity: 0 }}
+          transition={{ duration: 3 }}
+          animate={{
+            y: [100, 0, 100, 0],
+            opacity: 0.3,
+            scale: [1, 1, 1, 1, 1, 2, 3, 2],
+          }}
+        ></motion.div>
       </div>
-      <motion.div
-        className="circle"
-        transition={{
-          type: "spring",
-          bounce: "0.5",
-          duration: 2,
-          repeat: Infinity,
-        }}
-        animate={{ y: [100, 0, 100, 0], rotate: [0, 200, 200, 0] }}
-      ></motion.div>
     </>
   );
 };
