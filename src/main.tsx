@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
-import "./components/TopNavBar.tsx";
+import "./components/TopNavBar.js";
 
 import "./components/DarkmodeSlider.css";
 import "bootstrap/dist/css/bootstrap.css";

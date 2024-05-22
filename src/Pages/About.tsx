@@ -1,9 +1,20 @@
-import React from "react";
-import { motion, useAnimate } from "framer-motion";
+import React, { useContext } from "react";
+import { ThemeContext } from "../components/TopNavBar.js";
+import "./About.css";
+import "../components/DarkmodeSlider.css";
+
 const About = () => {
+  // Replace with the actual theme value
+
   return (
     <>
-      <h1>HIE</h1>
+      <img
+        className="profile-photo"
+        src="./assets/LiterallyMe.jpg"
+        alt="Literally Me"
+        id={"sdf"}
+      />
+      <h1 className="title">About Me</h1>
     </>
   );
 };
