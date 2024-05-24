@@ -19,13 +19,13 @@ input {
 }
 label:after {
     content: "";
-    width:28px;
-    height: 28px;
+    width:40%;
+    height: 80%;
     position: absolute;
-    top:1px;
-    left:1px;
+    top:0.25vw;
+    left:0.25vw;
     background: linear-gradient(180deg,#dcbbc2,#ecdce0);
-    border-radius: 20px;
+    border-radius: 5vw;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.2);}
     input:checked + label {
         background: #6f3465;
@@ -58,13 +58,13 @@ label:after {
       }
       #light button{
         transition: 0.5s;
-        background-color: white;
+        background-color: transparent
       }
       
       #light li.DayNightSlider{
         transition: 0.5s;
         margin:0%;
-        background-color: #fff !important;
+        background-color: transparent;
       }
       #dark a:hover{
         color:hotpink !important;
@@ -88,11 +88,10 @@ label:after {
       }
       #dark button{
         transition: 0.5s;
-        background-color: black;
+        background-color: transparent;
       }
       #dark li.DayNightSlider{
         transition: 0.5s;
         margin:0%;
-        background-color: #000 !important;
+        background-color: transparent;
       }
-    

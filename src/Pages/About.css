@@ -11,9 +11,22 @@ h1.title{
     top: 15%;
     left: 30%;
 }
+p.about-text{
+    font-size: 1.25rem;
+    position:fixed;
+    top: 20%;
+    left: 30%;
+}
+
 #darkh1  {
     color: white ;
 }
 #lighth1{
     color: black;
+}
+#lightp{
+    color: black;
+}
+#darkp{
+    color: #aaa;
 }
