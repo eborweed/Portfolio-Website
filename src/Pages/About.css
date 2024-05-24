@@ -11,6 +11,9 @@ h1.title{
     top: 15%;
     left: 30%;
 }
-#light h1 {
-    color: white !important;
+#darkh1  {
+    color: white ;
+}
+#lighth1{
+    color: black;
 }
