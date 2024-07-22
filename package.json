@@ -1,73 +1,36 @@
 {
-  "name": "portfolio-website",
+  "name": "react-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-<<<<<<< HEAD
   "scripts": {
-=======
-<<<<<<< HEAD
-  "scripts": {
-=======
-<<<<<<< HEAD
-  "scripts": {
-=======
-  "homepage": "https://eborweed.github.io/eborweed.github.io/",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" ,
->>>>>>> main
->>>>>>> b30d4cdb236bc3c3b3ece668e3af372449af66c7
->>>>>>> 90d7bea908f9e49b7b6cea25467dee6468e22512
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "framer-motion": "^11.2.6",
+    "framer-motion": "^11.0.14",
     "react": "^18.2.0",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    "react-animated-cursor": "^2.11.2",
->>>>>>> main
->>>>>>> b30d4cdb236bc3c3b3ece668e3af372449af66c7
->>>>>>> 90d7bea908f9e49b7b6cea25467dee6468e22512
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
-    "react-router": "^6.23.1",
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.0",
+    "react-type-animation": "^3.2.0",
+    "react-typed": "^2.0.12",
+    "reactstrap": "^9.2.2",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.66",
-    "@types/react-dom": "^18.2.22",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.6",
-<<<<<<< HEAD
-    "vite": "^5.2.0"
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.6"
   }
 }
-=======
-<<<<<<< HEAD
-    "vite": "^5.2.0"
-  }
-=======
-<<<<<<< HEAD
-    "vite": "^5.2.0"
-  }
-=======
-    "gh-pages": "^6.1.1",
-    "vite": "^5.2.0"
-  }
-  
->>>>>>> main
->>>>>>> b30d4cdb236bc3c3b3ece668e3af372449af66c7
-}
->>>>>>> 90d7bea908f9e49b7b6cea25467dee6468e22512
