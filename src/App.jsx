@@ -6,15 +6,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
 import { useState } from "react";
-
+import "./components/AnimCursor";
+import { AnimCursor } from "./components/AnimCursor";
 // Provide initial values for the context
 export const ThemeContext = React.createContext();
 var defaultTheme = window.localStorage.getItem('theme'); 
 // !! : cast to boolean
 function App() {
-  
-  console.log(defaultTheme
-  );
+  document.style="cursor:none;";
   const [theme, setTheme] = useState(defaultTheme === "dark" ? "dark" : "light");
   function changeTheme() {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -45,6 +44,7 @@ function App() {
   }
   return (
     <ThemeContext.Provider value={[ theme, changeTheme ]}>
+      <AnimCursor/>
       <TopNavBar />
 
       <BrowserRouter>

@@ -15,7 +15,7 @@ const About = () => {
         alt="Literally Me"
         id={theme}
       />
-      <h1 className="title" id= {theme+"text"}>About Me</h1>
+      <h1 className={"title"} id= {theme+"h1"}>About Me</h1>
     </>
   );
 };
