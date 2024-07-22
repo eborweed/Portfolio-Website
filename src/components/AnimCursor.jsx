@@ -22,10 +22,15 @@ export const AnimCursor = () => {
         'input[type="image"]',
         'label[for]',
         'select',
+<<<<<<< HEAD
         'textarea',
         'button',
         '.link',
         'body'
+=======
+        'button',
+        '.link',
+>>>>>>> refs/remotes/origin/new-js-version
       ]}
     />
     </div>

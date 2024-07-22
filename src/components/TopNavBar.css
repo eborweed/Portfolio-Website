@@ -3,12 +3,28 @@
 }
 
 div.topnav  {
+<<<<<<< HEAD
     padding: 4px;
+=======
+<<<<<<< HEAD
+    padding: 4px;
+=======
+    padding: 4px!important;
+>>>>>>> main
+>>>>>>> refs/remotes/origin/new-js-version
     word-spacing: 2;
     
 }
 li.DayNightSlider{
+<<<<<<< HEAD
   left:-20px !important;
+=======
+<<<<<<< HEAD
+  left:-20px !important;
+=======
+  left:-5vw !important;
+>>>>>>> main
+>>>>>>> refs/remotes/origin/new-js-version
 }
 ul{
     text-align: left;
@@ -20,7 +36,15 @@ li {
     
     display: inline;
     position:relative;    
+<<<<<<< HEAD
     margin:6%;
+=======
+<<<<<<< HEAD
+    margin:6%;
+=======
+    margin:8vw;
+>>>>>>> main
+>>>>>>> refs/remotes/origin/new-js-version
     left:-5%;
     
     background-color:#334 ;
@@ -31,7 +55,15 @@ button {
     scale:3.5 ;
     margin: 3%;
     padding: none;
+<<<<<<< HEAD
     font-size: smaller;
+=======
+<<<<<<< HEAD
+    font-size: smaller;
+=======
+    font-size: 1.5vw !important;
+>>>>>>> main
+>>>>>>> refs/remotes/origin/new-js-version
     background-color: none;
     border-style: none;
     
@@ -48,6 +80,15 @@ button {
     width:50px;
     height:40px;
 }
+<<<<<<< HEAD
 body{
   background-color: aquamarine;
 }
+=======
+<<<<<<< HEAD
+body{
+  background-color: aquamarine;
+}
+=======
+>>>>>>> main
+>>>>>>> refs/remotes/origin/new-js-version

@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
+>>>>>>> refs/remotes/origin/new-js-version
 img.profile-photo{
     width: 20%;
     height: 30%;
@@ -11,9 +18,35 @@ h1.title{
     top: 15%;
     left: 30%;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+#light h1 {
+    color: white !important;
+}
+=======
+p.about-text{
+    font-size: 1.25rem;
+    position:fixed;
+    top: 20%;
+    left: 30%;
+}
+
+>>>>>>> refs/remotes/origin/new-js-version
 #darkh1  {
     color: white ;
 }
 #lighth1{
     color: black;
+<<<<<<< HEAD
 }
+=======
+}
+#lightp{
+    color: black;
+}
+#darkp{
+    color: #aaa;
+}
+>>>>>>> main
+>>>>>>> refs/remotes/origin/new-js-version
