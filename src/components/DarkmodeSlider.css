@@ -1,3 +1,101 @@
+<<<<<<< HEAD
+label{
+  right: -60px;
+  top:10px;
+  width: 60px;
+  height:30px;
+  position: relative;
+  display: block;
+  background: white;
+  border-radius: 30px !important;
+  box-shadow: inset 4px 4px 15px  rgba(237, 86, 86, 0.4) , inset 4px -4px 15px rgba(255,255,255,0.4) !important;
+  cursor: pointer;
+}
+
+input {
+  width:0;
+  height:0;
+  visibility: hidden;
+}
+label:after {
+  content: "";
+  width:28px;
+  height: 28px;
+  position: absolute;
+  top:1px;
+  left:1px;
+  background: linear-gradient(180deg,#dcbbc2,#ecdce0);
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.2);}
+  input:checked + label {
+      background: #6f3465;
+    }
+    input:checked + label:after {
+      left:30px;
+      
+      background: linear-gradient(180deg,rgb(93, 15, 49),#cc7ec0);
+    }
+    label, label:after {
+    
+      transition: 0.3s
+    }
+    #light a:hover{
+      
+      color: hotpink !important;
+    }
+    #light a{
+      transition: 0.5s;
+      background-color: white;
+      color: black !important;
+    }
+     #light{
+      transition: 0.5s;
+      padding: 10px !important;
+      margin: 0px ;
+      text-align: center;
+      background-color: white;
+      color: white;
+    }
+    #light button{
+      transition: 0.5s;
+      background-color: white;
+    }
+    
+    #light li.DayNightSlider{
+      transition: 0.5s;
+      margin:0%;
+      background-color: #fff !important;
+    }
+    #dark a:hover{
+      color:hotpink !important;
+    }
+    #dark{
+      transition: 0.5s;
+      background-color:#000;
+    }
+    #dark a{
+      transition: 0.5s;
+      background-color: black;
+      color: white !important;
+    }
+     #dark{
+      transition: 0.5s;
+      padding: 10px !important;
+      margin: 0px ;
+      text-align: center;
+      background-color: black;
+      color: black;
+    }
+    #dark button{
+      transition: 0.5s;
+      background-color: black;
+    }
+    #dark li.DayNightSlider{
+      transition: 0.5s;
+      margin:0%;
+      background-color: #000 !important;
+    }
+=======
 
 label{
     right: -60px;
@@ -95,3 +193,4 @@ label:after {
         margin:0%;
         background-color: transparent;
       }
+>>>>>>> main

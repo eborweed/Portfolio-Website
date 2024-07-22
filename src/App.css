@@ -1,7 +1,10 @@
 body{
     background-color: #eeeeee !important;
+<<<<<<< HEAD
+=======
 }
 /* Add the following code to hide the cursor */
 *{
     cursor: none;
+>>>>>>> main
 }
