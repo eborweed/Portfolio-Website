@@ -11,9 +11,37 @@ h1.title{
     top: 15%;
     left: 30%;
 }
+
 #darkh1  {
     color: white ;
 }
 #lighth1{
     color: black;
 }
+#darkbody{
+    background-color: #222 !important;
+    color: #eee !important;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 5s forwards;
+    display: inline-block;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+#lightbody{
+    background-color: #eee !important;
+    color: #222 !important;
+
+}  
+.description{
+    position:fixed;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    font-size: 1rem;
+} 
