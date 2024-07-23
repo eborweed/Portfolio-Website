@@ -4,11 +4,10 @@
 
 div.topnav  {
     padding: 4px;
-    word-spacing: 2;
-    
+    width:100% !important;
 }
 li.DayNightSlider{
-  left:-20px !important;
+  left:5% !important;
 }
 ul{
     text-align: left;
@@ -17,27 +16,29 @@ li.home{
     left:-5%;
 }
 li {
-    
+    bottom: 20%;
     display: inline;
     position:relative;    
     margin:6%;
     left:-5%;
-    
     background-color:#334 ;
+    
 }
 
 button {
-    width: 5%;
-    scale:3.5 ;
+    
+    width: 7% !important;
     margin: 3%;
     padding: none;
-    font-size: smaller;
+    font-size: 150% !important;
     background-color: none;
     border-style: none;
-    
-     
+    text-align: center  !important;
+
   }
- 
+ a{
+  margin: 4%;
+ }
     
 
   a:link{

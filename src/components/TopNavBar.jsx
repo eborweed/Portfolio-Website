@@ -22,13 +22,13 @@ function TopNavBar() {
 
         <li className="about">
           <button>
-            <a href={"/About"}>About </a>
+            <a href="/About">About </a>
           </button>
         </li>
 
         <li className="projects">
           <button>
-            <a href="/projects">Projects</a>
+            <a href="/Projects">Projects</a>
           </button>
         </li>
         <li className="contact">

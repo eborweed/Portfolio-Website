@@ -31,7 +31,7 @@ function App() {
       );
     } else if(theme === "light") {
       localStorage.setItem('theme', "dark");
-       defaultTheme = window.localStorage.getItem('theme'); 
+      defaultTheme = window.localStorage.getItem('theme'); 
  
       document.body.style.setProperty("background", "#222222", "important");
       document.body.style.setProperty(

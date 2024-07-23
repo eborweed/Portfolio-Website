@@ -1,54 +1,39 @@
 
 img.profile-photo{
-    width: 20%;
-    height: 30%;
+    width: 10rem !important;
+    height: 10rem	!important;
     position:fixed;
     top: 20%;
 }
 h1.title{
     font-size: 2rem;
     position:fixed;
-    top: 15%;
-    left: 30%;
+    top: 9rem;
+    left: 11rem;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 716f1941c8fff801bc6bb93127a6d34736113b7e
 #darkh1  {
     color: white ;
 }
 #lighth1{
     color: black;
-<<<<<<< HEAD
 }
 #darkbody{
     background-color: #222 !important;
     color: #eee !important;
-    overflow: hidden;
-    border-right: .15em solid orange;
-    white-space: nowrap;
-    font-size: 1.6rem;
-    width: 0;
-    animation: typing 5s forwards;
-    display: inline-block;
+    transition: 0.5s;
+    
 }
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+
 #lightbody{
     background-color: #eee !important;
     color: #222 !important;
+    transition: 0.5s;
 
 }  
 .description{
     position:fixed;
-    top: 20%;
-    left: 30%;
+    top: 13rem;
+    left: 11rem;
     width: 40%;
     font-size: 1rem;
 } 
-=======
-}
->>>>>>> 716f1941c8fff801bc6bb93127a6d34736113b7e
