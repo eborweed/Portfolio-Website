@@ -14,12 +14,14 @@ ul{
 }
 li.home{
     left:-5%;
+    scale:0%;
+    background-color:transparent !important;
 }
 li {
     bottom: 20%;
     display: inline;
     position:relative;    
-    margin:6%;
+    margin:9%;
     left:-5%;
     background-color:#334 ;
     
@@ -36,9 +38,7 @@ button {
     text-align: center  !important;
 
   }
- a{
-  margin: 4%;
- }
+ 
     
 
   a:link{
