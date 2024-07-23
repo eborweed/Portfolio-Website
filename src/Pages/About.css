@@ -11,12 +11,16 @@ h1.title{
     top: 15%;
     left: 30%;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 716f1941c8fff801bc6bb93127a6d34736113b7e
 #darkh1  {
     color: white ;
 }
 #lighth1{
     color: black;
+<<<<<<< HEAD
 }
 #darkbody{
     background-color: #222 !important;
@@ -45,3 +49,6 @@ h1.title{
     width: 40%;
     font-size: 1rem;
 } 
+=======
+}
+>>>>>>> 716f1941c8fff801bc6bb93127a6d34736113b7e

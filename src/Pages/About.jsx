@@ -18,11 +18,14 @@ const About = () => {
         id={theme}
       />
       <h1 className={"title"} id= {theme+"h1"}>About Me</h1>
+<<<<<<< HEAD
       <body className="description"id={theme+"body"}>
       Hi my name is Ibrahim and I like playing Fortnite Sigma Tycoon<p>
       In my time off I like to cower in fear of women.
       </p>  
       </body>
+=======
+>>>>>>> 716f1941c8fff801bc6bb93127a6d34736113b7e
     </>
   );
 };
