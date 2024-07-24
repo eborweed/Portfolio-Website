@@ -18,8 +18,8 @@ const About = () => {
       />
       <h1 className={"title"} id= {theme+"h1"}>About Me</h1>
       <body className="description"id={theme+"body"}>
-      Hi my name is Ibrahim and I like playing Fortnite Sigma Tycoon<p/>
-      In my time off I like to cower in fear of women.
+      Lorem Ipsuum Dolor<p/>
+      G
       
       </body>
 

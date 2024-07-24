@@ -5,6 +5,7 @@ import AnimationTest from "./components/AnimationTest";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
+import Projects from "./Pages/Projects";
 import { useState } from "react";
 import "./components/AnimCursor";
 import { AnimCursor } from "./components/AnimCursor";
@@ -52,6 +53,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/Projects" element={<Projects/>}/>
         </Routes>
       </BrowserRouter>
     </ThemeContext.Provider>

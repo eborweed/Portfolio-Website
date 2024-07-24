@@ -1,54 +1,88 @@
-*{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* Global Styles */
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-div.topnav  {
-    padding: 4px;
-    width:100% !important;
-}
-li.DayNightSlider{
-  left:5% !important;
-}
-ul{
-    text-align: left;
-}
-li.home{
-    left:-5%;
-    scale:0%;
-    background-color:transparent !important;
-}
-li {
-    bottom: 20%;
-    display: inline;
-    position:relative;    
-    margin:9%;
-    left:-5%;
-    background-color:#334 ;
-    
-}
-
-button {
-    
-    width: 7% !important;
-    margin: 3%;
-    padding: none;
-    font-size: 150% !important;
-    background-color: none;
-    border-style: none;
-    text-align: center  !important;
-
-  }
- 
-    
-
-  a:link{
-    text-decoration:none;
-
-  }
-  img{
-    width:50px;
-    height:40px;
-}
-body{
+body {
   background-color: aquamarine;
+}
+
+/* Navbar Styles */
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #334;
+  width: 100%;
+}
+
+.topnav img {
+  width: 50px;
+  height: 40px;
+}
+
+.topnav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.topnav li {
+  margin: 0 10px;
+}
+
+.topnav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.topnav button {
+  width: auto;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #ff6699;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.topnav button:hover {
+  background-color: #ff3366;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .topnav ul {
+      flex-direction: column;
+      align-items: center;
+      width:100% !important;
+  }
+
+  .topnav li {
+      margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .topnav {
+      flex-direction: column;
+      width:100% !important;
+  }
+
+  .topnav img {
+      margin-bottom: 10px;
+  }
+
+  .topnav ul {
+      width: 100%;
+      text-align: center;
+  }
 }
