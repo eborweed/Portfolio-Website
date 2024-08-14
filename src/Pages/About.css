@@ -37,3 +37,24 @@ h1.title{
     width: 40%;
     font-size: 1rem;
 } 
+@media (max-width: 768px) {
+    img.profile-photo{
+        width: 10rem !important;
+        height: 10rem	!important;
+        position:fixed;
+        top: 30%;
+    }
+    h1.title{
+        font-size: 1rem;
+        position:fixed;
+        top: 6rem;
+        left: 6rem;
+    }
+    .description{
+        position:fixed;
+        top: 8rem;
+        left: 6rem;
+        width: 40%;
+        font-size: 0.5rem;
+    } 
+}
