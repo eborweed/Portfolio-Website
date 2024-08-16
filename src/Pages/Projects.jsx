@@ -13,10 +13,26 @@ const Projects = () => {
   const [slide, setSlide] = useState(projects[0]);
   const [isVisible, setIsVisible] = useState(true);
 
-  function changeSlide() {
+  function nextSlide() {
     setIsVisible(false); // Trigger fade out
     setTimeout(() => {
-      setSlide(slide === projects[0] ? projects[1] : projects[0]);
+      setSlide((slide) => {
+        const currentIndex = projects.indexOf(slide);
+        const nextIndex = (currentIndex + 1) % projects.length;
+        return projects[nextIndex];
+      });
+      setIsVisible(true); // Trigger fade in
+    }, 500); // Adjust this timeout to match the duration of the fade-out animation
+  }
+
+  function previousSlide() {
+    setIsVisible(false); // Trigger fade out
+    setTimeout(() => {
+      setSlide((slide) => {
+        const currentIndex = projects.indexOf(slide);
+        const previousIndex = (currentIndex - 1 + projects.length) % projects.length;
+        return projects[previousIndex];
+      });
       setIsVisible(true); // Trigger fade in
     }, 500); // Adjust this timeout to match the duration of the fade-out animation
   }
@@ -25,6 +41,9 @@ const Projects = () => {
     <>
       <div className="Text--Container">
         <div className="Projects">
+        <div className="TextSlide">
+        <motion.h2 animate={{ opacity: isVisible ? 1 : 0 }}
+            transition={{ duration: 0.5 }}>{slide.name}</motion.h2> 
           <motion.img
             className="slide"
             src={slide.imageSource}
@@ -32,13 +51,18 @@ const Projects = () => {
             animate={{ opacity: isVisible ? 1 : 0 }}
             transition={{ duration: 0.5 }}
           />
+          <motion.p animate={{ opacity: isVisible ? 1 : 0 }}
+            transition={{ duration: 0.5 }} className="text">{slide.description}</motion.p>
+            <motion.p animate={{ opacity: isVisible ? 1 : 0 }}
+            transition={{ duration: 0.5 }} className="text">{"Tech stack: "+slide.techStack.join(", ")}</motion.p>
+
+            </div>
           <div className="buttons">
-            <button className="learn-more" onClick={changeSlide}>HAHa</button>
-            <button className="learn-more" onClick={changeSlide}>HAHa</button>
+            <button className="learn-more" onClick={previousSlide}>Back</button>
+            <button className="learn-more" onClick={nextSlide}>Next</button>
           </div>
         </div>
-        <motion.p animate={{ opacity: isVisible ? 1 : 0 }}
-            transition={{ duration: 0.5 }} className="text">{slide.description}</motion.p>
+
       </div>
     </>
   );

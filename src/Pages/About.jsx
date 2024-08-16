@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import {ThemeContext} from "../App";
 import "./About.css";
 //import "../components/DarkmodeSlider.css";
+import { IconCloudDemo } from "../components/IconCloud.jsx";
 
 const About = () => {
   // Replace with the actual theme value
@@ -10,6 +11,7 @@ const About = () => {
 
   return (
     <>
+    <IconCloudDemo/>
       <img
         className="profile-photo"
         src="./assets/LiterallyMe.jpg"
