@@ -5,10 +5,12 @@ import { useTheme } from "next-themes";
 import {
   Cloud,
   fetchSimpleIcons,
+  ICloud,
   renderSimpleIcon,
+  SimpleIcon,
 } from "react-icon-cloud";
 
-const cloudProps = {
+export const cloudProps: Omit<ICloud, "children"> = {
   containerProps: {
     style: {
       display: "flex",
@@ -31,10 +33,11 @@ const cloudProps = {
     outlineColour: "#0000",
     maxSpeed: 0.04,
     minSpeed: 0.02,
+    // dragControl: false,
   },
 };
 
-const renderCustomIcon = (icon, theme) => {
+export const renderCustomIcon = (icon: SimpleIcon, theme: string) => {
   const bgHex = theme === "light" ? "#f3f2ef" : "#080510";
   const fallbackHex = theme === "light" ? "#6e6e73" : "#ffffff";
   const minContrastRatio = theme === "dark" ? 2 : 1.2;
@@ -49,13 +52,19 @@ const renderCustomIcon = (icon, theme) => {
       href: undefined,
       target: undefined,
       rel: undefined,
-      onClick: (e) => e.preventDefault(),
+      onClick: (e: any) => e.preventDefault(),
     },
   });
 };
 
-export default function IconCloud({ iconSlugs }) {
-  const [data, setData] = useState(null);
+export type DynamicCloudProps = {
+  iconSlugs: string[];
+};
+
+type IconData = Awaited<ReturnType<typeof fetchSimpleIcons>>;
+
+export default function IconCloud({ iconSlugs }: DynamicCloudProps) {
+  const [data, setData] = useState<IconData | null>(null);
   const { theme } = useTheme();
 
   useEffect(() => {
@@ -66,14 +75,14 @@ export default function IconCloud({ iconSlugs }) {
     if (!data) return null;
 
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "light")
+      renderCustomIcon(icon, theme || "light"),
     );
   }, [data, theme]);
 
   return (
     // @ts-ignore
     <Cloud {...cloudProps}>
-      {renderedIcons}
+      <>{renderedIcons}</>
     </Cloud>
   );
 }

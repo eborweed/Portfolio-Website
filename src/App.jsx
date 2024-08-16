@@ -45,18 +45,15 @@ function App() {
   }
   return (
     <ThemeContext.Provider value={[ theme, changeTheme ]}>
+    <div className="main-container">
       <AnimCursor/>
       <TopNavBar />
-
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/Projects" element={<Projects/>}/>
-        </Routes>
-      </BrowserRouter>
+      <Home/>
+      <About/>
+      <Projects/>
+    </div>
     </ThemeContext.Provider>
+
   );
 }
 
