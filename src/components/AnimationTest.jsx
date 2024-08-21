@@ -12,7 +12,7 @@ const AnimationTest = () => {
           initial={{ y: 0, opacity: 0 }}
           transition={{ duration: 3 }}
           animate={{
-            y: [100, 0, 100, 0],
+            y: [100, 0, 100, 80],
             opacity: 0.3,
             scale: [1, 1, 1, 1, 1, 2, 3, 2],
           }}

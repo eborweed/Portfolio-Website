@@ -45,14 +45,15 @@ function App() {
   }
   return (
     <ThemeContext.Provider value={[ theme, changeTheme ]}>
-    <div className="main-container">
+      <div className="main-container">
       <AnimCursor/>
-      <TopNavBar />
+        <TopNavBar />
       <Home/>
       <About/>
       <Projects/>
-    </div>
+      </div>
     </ThemeContext.Provider>
+
   );
 }
 

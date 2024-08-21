@@ -6,10 +6,10 @@ import {IconCloudDemo} from "../components/IconCloud";
 const About = () => {
   // Replace with the actual theme value
   const [theme,changeTheme]  = useContext(ThemeContext);
-  theme=="dark"?document.body.style.setProperty("background", "#222", "important"):document.body.style.setProperty("background", "#eee", "important");
+  //theme=="dark"?document.body.style.setProperty("background", "#ddd", "important"):document.body.style.setProperty("background", "#ccc", "important");
 
   return (
-    <div className="icon-cloud-container"> <div className="outer-container">
+    <div className="icon-cloud-container" id={theme+"body"} > 
     
           <h1 className={"title"} id= {theme+"h1"}>About Me</h1>
       <img
@@ -18,16 +18,12 @@ const About = () => {
         alt="Literally Me"
         id={theme}
       />
-
-      <body className="description"id={theme+"body"}>
       Lorem Ipsuum Dolor<p/>
       G
       
-      </body>
-
-</div>
       <h1 className="title" id={theme+"body"}>Tech Stack:</h1>
 <IconCloudDemo/>
+
     </div>
   );
 };
