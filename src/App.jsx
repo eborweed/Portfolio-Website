@@ -45,9 +45,9 @@ function App() {
   return (
     <ThemeContext.Provider value={[ theme, changeTheme ]}>
       <div className="main-container">
-        <AnimCursor/>
+        {window.innerWidth >= 768 && <AnimCursor/>}
 
-          <TopNavBar />
+        <TopNavBar />
 
         <div id="home">
           <Home/>

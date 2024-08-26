@@ -1,4 +1,4 @@
-.Projects{
+.Projects {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -8,7 +8,8 @@
     padding: 0;
     margin: 0;
 }
-.TextSlide{
+
+.TextSlide {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,27 +19,30 @@
     padding: 0;
     margin: 0;
 }
-.Text--Container{
-    color:white;
+
+.Text--Container {
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     size: fit-content;
 }
+
 button {
-    display: inline-flex; /* Changed from inline-block to inline-flex */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     outline: none;
     border: 0;
-    padding: 0%; /* Consider setting specific padding if necessary */
+    padding: 0%;
     vertical-align: middle;
     text-decoration: none;
     font-family: inherit;
     font-size: 15px;
 }
+
 .buttons {
     display: flex;
     justify-content: center;
@@ -46,11 +50,9 @@ button {
     align-items: center;
     margin-top: 1rem;
 }
+
 button.learn-more {
     text-align: center !important;
-    position:relative;
-    top: 30%;
-    left: 30%;
     font-weight: 600;
     color: #382b22;
     text-transform: uppercase;
@@ -58,70 +60,43 @@ button.learn-more {
     background: #fff0f0;
     border: 2px solid #b18597;
     border-radius: 0.75em;
-    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 
-button.learn-more::before {
-    position: absolute;
-    
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #f9c4d2;
-    border-radius: inherit;
-    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
-    box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
-    -webkit-transform: translate3d(0, 0.75em, -1em);
-    transform: translate3d(0, 0.75em, -1em);
-    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-}
-
-button.learn-more:hover {
-    background: #ffe9e9;
-    -webkit-transform: translate(0, 0.25em);
-    transform: translate(0, 0.25em);
-}
-
-button.learn-more:hover::before {
-    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
-    box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
-    -webkit-transform: translate3d(0, 0.5em, -1em);
-    transform: translate3d(0, 0.5em, -1em);
-}
-
-button.learn-more:active {
-    background: #ffe9e9;
-    -webkit-transform: translate(0em, 0.75em);
-    transform: translate(0em, 0.75em);
-}
-
-button.learn-more:active::before {
-    -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
-    box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
-    -webkit-transform: translate3d(0, 0, -1em);
-    transform: translate3d(0, 0, -1em);
-}
 img.slide {
-    position:relative;
+    position: relative;
     width: 20rem;
     height: 20rem;
     object-fit: cover;
     border-radius: 0.75em;
-    -webkit-transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
     transition: transform 150ms cubic-bezier(0, 0, 0.58, 1);
 }
+
 @media (max-width: 768px) {
+    .Projects {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .TextSlide {
+        width: 100%;
+    }
+
     .buttons {
-        top: 50%;
-        right: 0;
-        margin: 0;
-        padding: 0;
+        flex-direction: row;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    img.slide {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    button.learn-more {
+        padding: 1em 1.5em;
     }
 }

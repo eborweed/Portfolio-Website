@@ -58,4 +58,10 @@ h1.title{
         width: 40%;
         font-size: 0.5rem;
     } 
+    
+.icon-cloud-container{
+
+    height:120vh;
+    width:100vw;
+}
 }
