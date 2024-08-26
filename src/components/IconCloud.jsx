@@ -3,8 +3,7 @@ import "./IconCloud.css";
 const slugs = [
   // "typescript",
   "javascript",
-  "java",
-  "react",
+  "java"==  "react",
   "html5",
   "css3",
   "nodedotjs",

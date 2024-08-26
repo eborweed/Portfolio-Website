@@ -1,14 +1,13 @@
 import React from "react";
 import "./App.css";
 import TopNavBar from "./components/TopNavBar";
-import AnimationTest from "./components/AnimationTest";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
 import { useState } from "react";
 import "./components/AnimCursor";
 import { AnimCursor } from "./components/AnimCursor";
+import Contacts from "./Pages/Contacts";
 // Provide initial values for the context
 export const ThemeContext = React.createContext();
 var defaultTheme = window.localStorage.getItem('theme'); 
@@ -51,6 +50,7 @@ function App() {
       <Home/>
       <About/>
       <Projects/>
+      <Contacts/>
       </div>
     </ThemeContext.Provider>
 

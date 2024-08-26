@@ -1,5 +1,5 @@
-import React from "react";
-import { motion, useAnimate } from "framer-motion";
+
+import { motion} from "framer-motion";
 import "./AnimationTest.css";
 const AnimationTest = () => {
   return (
@@ -16,6 +16,7 @@ const AnimationTest = () => {
             opacity: 0.3,
             scale: [1, 1, 1, 1, 1, 2, 3, 2],
           }}
+          dragConstraints={{ left: 10, right: 10, top: 10, bottom: 10 }}
         ></motion.div>
       </div>
     </>

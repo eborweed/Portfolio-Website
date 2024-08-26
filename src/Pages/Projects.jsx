@@ -42,8 +42,10 @@ const Projects = () => {
       <div className="Text--Container">
         <div className="Projects">
         <div className="TextSlide">
+        <h1 id=
+{theme+"heading"}> Projects </h1>
         <motion.h2 animate={{ opacity: isVisible ? 1 : 0 }}
-            transition={{ duration: 0.5 }}>{slide.name}</motion.h2> 
+            transition={{ duration: 0.5 }}id={theme+"text"}>{slide.name}</motion.h2> 
           <motion.img
             className="slide"
             src={slide.imageSource}
@@ -52,9 +54,9 @@ const Projects = () => {
             transition={{ duration: 0.5 }}
           />
           <motion.p animate={{ opacity: isVisible ? 1 : 0 }}
-            transition={{ duration: 0.5 }} className="text">{slide.description}</motion.p>
+            transition={{ duration: 0.5 }} className="text" id={theme+"text"} >{slide.description}</motion.p>
             <motion.p animate={{ opacity: isVisible ? 1 : 0 }}
-            transition={{ duration: 0.5 }} className="text">{"Tech stack: "+slide.techStack.join(", ")}</motion.p>
+            transition={{ duration: 0.5 }} className="text" id={theme+"text"}>{"Tech stack: "+slide.techStack.join(", ")}</motion.p>
 
             </div>
           <div className="buttons">

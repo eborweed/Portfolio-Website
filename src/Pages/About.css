@@ -14,10 +14,10 @@ img.profile-photo{
 h1.title{
     font-size: 2rem;
 }
-#darkh1  {
+#darktext  {
     color: white ;
 }
-#lighth1{
+#lighttext{
     color: black;
 }
 #darkbody{

@@ -1,6 +1,6 @@
 import "./TopNavBar.css";
 import "./DarkmodeSlider.css";
-import React, { useContext, Context } from "react";
+import { useContext, } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../App.css";
 import {ThemeContext} from "../App.jsx";
@@ -33,7 +33,7 @@ function TopNavBar() {
         </li>
         <li className="contact">
           <button>
-            <a href="#contact">Contacts</a>
+            <a href="#contact">Links</a>
           </button>
         </li>
         <li className="DayNightSlider">
