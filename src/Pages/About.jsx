@@ -18,8 +18,10 @@ const About = () => {
         alt="Literally Me"
         id={theme}
       />
-      Lorem Ipsuum Dolor<p/>
-      G
+      <p className="about-text">Hi, I'm Ibrahim Waheed, a passionate Software Engineering student at the University of Auckland with a keen interest in web development, cloud technologies, 
+      and innovative problem-solving. I enjoy creating responsive, interactive applications and exploring new ways to leverage technology to make a positive impact. 
+      When I'm not coding, you'll find me mentoring peers, delving into the latest tech trends, or immersing myself in diverse cultures and art. 
+      I'm always eager to learn, collaborate, and push the boundaries of what's possible.</p>
       
       <h1 className="title" id={theme+"text"}>Tech Stack:</h1>
 <IconCloudDemo/>

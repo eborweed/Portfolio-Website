@@ -11,3 +11,8 @@
     grid-column-gap:50vw;
     align-items: left;
 }
+@media (max-width: 600px) {
+    .contact-info {
+        grid-column-gap: 0;
+    }
+}

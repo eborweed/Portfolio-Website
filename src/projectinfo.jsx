@@ -10,6 +10,7 @@ const projects = [
         imageSource: './assets/Project2.png',
         description: 'Personal portfolio website to showcase my projects and skills.',
         techStack: ['React', 'Node.js','JavaScript','HTML','CSS'],
+        link: 'https://ibrahimportfoliosite.netlify.app'
     },
     {
         name: 'Visual Cryptography',
@@ -22,6 +23,7 @@ const projects = [
         imageSource: './assets/Project4.png',
         description: 'Project for Terrible Ideas Hackathon, intentionally bad website to troll users.',
         techStack: ['React', 'Node.js','JavaScript','OPENAI API','Ngrok'],	
+        link: 'https://emergencytroll.netlify.app'
     }
 ];
 

@@ -4,15 +4,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:100vh;
+    height:200vh;
     width:100vw;
 }
+p.about-text{
+    text-align: center;
+    margin: 0;
+    width: 50rem;
+}
 img.profile-photo{
-    width: 10rem !important;
-    height: 10rem	!important;
+    width:20rem;
 }
 h1.title{
     font-size: 2rem;
+    margin-top: 80px;
 }
 #darktext  {
     color: white ;

@@ -4,6 +4,7 @@ import { useContext, } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../App.css";
 import {ThemeContext} from "../App.jsx";
+import { Link } from "react-scroll"; // Import the Link component from react-scroll library
 
 // Provide initial values for the context
 
@@ -22,18 +23,18 @@ function TopNavBar() {
 
         <li className="about">
           <button>
-            <a href="/About">About </a>
+          <Link to="about">About Me</Link>
           </button>
         </li>
 
         <li className="projects">
           <button>
-            <a href="/Projects">Projects</a>
+          <Link to="projects">Projects</Link>
           </button>
         </li>
         <li className="contact">
           <button>
-            <a href="#contact">Links</a>
+          <Link to="contacts">Links</Link>
           </button>
         </li>
         <li className="DayNightSlider">

@@ -125,5 +125,10 @@ body {
   background-color: #ddd;
   color: black;
 }
+.DayNightSlider{
 
+  .DayNightSlider {
+    margin-left: 0 ;
+  }
+}
 }
