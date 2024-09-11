@@ -24,6 +24,11 @@ const projects = [
         description: 'Project for Terrible Ideas Hackathon, intentionally bad website to troll users.',
         techStack: ['React', 'Node.js','JavaScript','OPENAI API','Ngrok'],	
         link: 'https://emergencytroll.netlify.app'
+    },
+    {name: 'Google Paws'
+    ,imageSource: './assets/Project5.png',
+    description: 'GDSC Hackathon project aimed at helping promote animal education and awareness specifically around rarer/endangered species.',
+    techStack: ['React', 'Node.js','Firebase','GPT-4o','Google Maps','JavaScript','HTML','CSS'],
     }
 ];
 
