@@ -1,16 +1,22 @@
 const projects = [
     {
-        name: 'PS Sale Checker',
-        imageSource: './assets/Project1.png',
-        description: 'Web scraping tool to check for sales on PlayStation Store and send notifications.',
-        techStack: ['Python', 'Selenium','Tkinter'],
-    },
-    {
         name: 'Portfolio Website',
         imageSource: './assets/Project2.png',
         description: 'Personal portfolio website to showcase my projects and skills.',
         techStack: ['React', 'Node.js','JavaScript','HTML','CSS'],
         link: 'https://ibrahimportfoliosite.netlify.app'
+    },
+    {
+        name: 'Google Paws',
+        imageSource: './assets/Project5.png',
+        description: 'GDSC Hackathon project aimed at helping promote animal education and awareness specifically around rarer/endangered species.',
+        techStack: ['React', 'Node.js','Firebase','GPT-4o','Google Maps','JavaScript','HTML','CSS'],
+    },
+    {
+        name: 'PS Sale Checker',
+        imageSource: './assets/Project1.png',
+        description: 'Web scraping tool to check for sales on PlayStation Store and send notifications.',
+        techStack: ['Python', 'Selenium','Tkinter'],
     },
     {
         name: 'Visual Cryptography',
@@ -25,11 +31,6 @@ const projects = [
         techStack: ['React', 'Node.js','JavaScript','OPENAI API','Ngrok'],	
         link: 'https://emergencytroll.netlify.app'
     },
-    {name: 'Google Paws'
-    ,imageSource: './assets/Project5.png',
-    description: 'GDSC Hackathon project aimed at helping promote animal education and awareness specifically around rarer/endangered species.',
-    techStack: ['React', 'Node.js','Firebase','GPT-4o','Google Maps','JavaScript','HTML','CSS'],
-    }
 ];
 
 export default projects;
